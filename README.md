@@ -1,10 +1,11 @@
 ## KeyWorkID System
 
 Our system will generate keys in a 256 bit encryption
-Key Generate format is base on 64 bit contain to key to generate the the KeyWorkID
-Signing-Key || Encryption-Key (provide by the system)
-Signing-key, 128 bits
-Encryption-key, 128 bits
+Key Generate format is base on 64 bit contain to key to generate the KeyWorkID
+
+Signing-key ‖ Encryption-key (provide by the system)
+- *Signing-key*, 128 bits
+- *KeyWorkID-key*, 128 bits
 
 KeyWorkID provides a global name space so you can manage all the benefits on different environments.
 
