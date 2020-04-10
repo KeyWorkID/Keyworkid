@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Lato:100,300,400,500,600,700,800&display=swap" rel="stylesheet">
+<style>
+
+body {
+background:#92AAE8;  
+margin:0;
+padding:0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  color:black;
+  padding: 25px 15px;
+  text-align:center;
+  background:white; 
+  height:100px;
+  width:100%;
+}
+
+#logo {
+font-weight:300;  
+}
+
+h1 {
+text-align:center;  
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+input, label {
+    display:block;
+    text-align:center;
+}
+
+label {
+margin-bottom: 60px;
+font-size:24px;  
+line-height:12px;
+line-height:43%;
+font-weight:400;
+display:none;
+
+}
+
+input[type="text"] {
+  /* Chrome/Opera/Safari */
+  font-size: 18px;
+  color: dimgrey;
+  font-family: sans-serif;
+  height:50px;
+  width:200px;
+  margin:auto;
+  border-radius:15px;
+  border:transparent;
+}
+
+
+.form-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  
+  width:75%;
+}
+
+.button-container {
+width:100%;
+margin:25% auto auto auto;  
+display:block;
+}
+
+#login {
+float:right;  
+margin-right:12.5%;
+background: #6BDE85;
+}
+
+#help {
+float:left;  
+margin-left:12.5%;
+background:#FFFFFF;
+color:black;
+}
+
+button {
+width:120px;
+height:50px;
+border-radius:2px;
+color:white; 
+font-weight:500;
+font-size:14px; 
+letter-spacing: 0.16px;
+border:transparent;
+  box-shadow: 2px 2px 4px grey;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color:black;
+  font-size:24px;
+  font-weight:300;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:black;
+  font-size:24px;
+  font-weight:300;
+  line-height: : 12px
+  line-height: 43%
+}
+
+::placeholder {
+  color:black;
+  font-size:24px;
+  font-weight:300;
+}
+
+
+#category .arrow-left img {
+max-width:50px;
+height:auto;  
+}
+
+#category .question img {
+max-width:45px;
+height:auto;  
+margin-top:5px;
+}
+
+.service {
+background:white;
+padding:10px 25px;
+margin:15px 0px;  
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+h3, h4 {
+margin:10px 0px;  
+}
+
+h3 {
+font-size:24px;
+font-weight:400;  
+}
+
+h4 {
+font-size:18px;
+font-weight:300;    
+}
+
+
+.service h3 {
+float:left;  
+}
+
+.service h4 {
+clear:both;  
+}
+
+.service i {
+float:right;  
+font-size:2em;
+margin-top:15px;
+}
+
+.service-image {
+float:right;  
+margin:-75px auto auto auto;
+}
+
+.service-image img {
+width:60px;  
+}
+
+
+#category .arrow-left {
+float:left;  
+margin-left:30px;
+}
+
+#category .question {
+float:right;  
+margin-right:30px;
+}
+
+h1 {
+font-size:30px;  
+width:30%;
+float:left;
+margin:5px 17.5%;
+}
+
+@media only screen and (min-width: 600px) { 
+
+#category {
+max-width:500px;
+margin:auto;  
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) { 
+
+.service {
+width:48%;
+float:left; 
+margin:10px 1%; 
+}
+
+.col-12 {
+width:90%;
+margin:60px 5%;  
+}
+
+
+#category {
+font-size:36px;  
+}
+
+.header {
+height:120px;  
+}
+
+.service h3, .service h4 {
+ float:none; 
+text-align: center !important;  
+}
+
+.service i {
+margin-top:-25px;
+margin-left:100px; 
+margin-right:25px;
+font-size:2em; 
+}
+
+
+
+.service-image {
+float:right;  
+margin:-70px auto auto auto; 
+}
+
+.service-image img {
+width:70px; 
+}
+
+.service {
+min-height:120px;   
+}
+
+#category {
+max-width:500px;
+margin:auto;  
+}
+
+
+} 
+
+</style>
+<script src="https://use.fontawesome.com/590775982c.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <div id="category"><a href="index.html"><span class="arrow-left"><img src="leftarrow.jpg"></span></a><h1>Categories</h1><span class="question"><img src="question.jpg"></span></div>
+</div>
+
+<div class="row">
+  <div class="col-3 menu" style="display:none;">
+    <ul>
+      <li>KeyWork ID</li>
+      <li>How it works</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="col-12">
+      <a href="dashboard-food.html"><div class="service one"><h3>Meal delivery</h3><h4>Priority services</h4><div class="service-image"><img src="delivery.png"></div></div></a>
+      <a href="dashboard-groceries.html"><div class="service two"><h3>Grocery delivery</h3><h4>Priority services + bulk discount</h4><div class="service-image"><img src="groceries.png"></div></div></a>
+        <a href="dashboard-medical.html"><div class="service four"><h3>Medical supplies</h3><h4>Priority services + bulk discount</h4><div class="service-image"><img src="medical.png"></div></div></a>
+      <a href="dashboard-taxi.html"><div class="service three"><h3>Taxi service</h3><h4>Priority services</h4><div class="service-image"><img src="taxi.png"></div></div></a>
+  </div>
+
+
+  
+
+
+</body>
+</html>
+
